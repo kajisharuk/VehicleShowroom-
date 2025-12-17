@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #ff4e50, #f9d423, #24c6dc, #514a9d, #ff6a00);
+    background-size: 400% 400%;
+    animation: liveGradient 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes liveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    color: white;
+    margin-top: 50px;
+}
+
+.bikes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    display: block;
+    background: rgba(255,255,255,0.9);
+    width: 220px;
+    text-align: center;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+.small-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 6px;
+    font-weight: normal;
+}
